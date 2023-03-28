@@ -3,9 +3,10 @@ export class Roller {
     private _last: number;
     private _faces: number;
 
-    // specifies the number of faces the die has. It must have at least 2 faces
-    // so any invalid values should default to 6 to represent the common 
-    // six-sided die.
+    // specifies the number of faces the die has. It must have between 2 and 20
+    // faces (inclusive). Any invalid values should default to 2 to represent 
+    // the common coin flip. All numbers in this class should be truncated as
+    // an integer if any non-integer number is provided.
     constructor(faces: number) {
         faces;
     }
